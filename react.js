@@ -30,6 +30,16 @@ module.exports = {
     sourceType: 'script',
   },
   rules: {
+    'react/jsx-indent':
+    [
+      2,
+      4,
+    ],
+    'react/jsx-indent-props':
+    [
+      2,
+      4,
+    ],
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
     'react/prop-types': 0,

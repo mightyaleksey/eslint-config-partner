@@ -33,6 +33,20 @@ Create file `.eslintrc.json` in your project directory with the following conten
 }
 ```
 
+### Possible environments
+
+- `react` — use for react, flowtype and jest.
+- `server` — the default one.
+- `static` — designed for es5 mostly.
+
+Example:
+
+```json
+{
+  "extends": "@sullenor/eslint-config-partner/react"
+}
+```
+
 
 ## License
 

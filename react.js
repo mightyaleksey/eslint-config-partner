@@ -11,7 +11,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:flowtype/recommended',
-    'plugin:react/recommende',
+    'plugin:react/recommended',
     './rules/best-practices.js',
     './rules/commonjs.js',
     './rules/es6.js',

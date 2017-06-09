@@ -2,7 +2,7 @@
   "name": "@sullenor/eslint-config-partner",
   "version": "1.0.14",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "sh test/test.sh"
   },

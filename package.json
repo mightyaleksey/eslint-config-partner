@@ -11,13 +11,13 @@
     "eslintconfig"
   ],
   "author": "Alexey Litvinov",
-  "homepage": "https://github.com/sullenor/clean-up-your-code/tree/master/packages/eslint-config-partner#readme",
+  "homepage": "https://github.com/sullenor/eslint-config-partner#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sullenor/clean-up-your-code/tree/master/packages/eslint-config-partner"
+    "url": "git+https://github.com/sullenor/eslint-config-partner.git"
   },
   "bugs": {
-    "url": "https://github.com/sullenor/clean-up-your-code/issues"
+    "url": "https://github.com/sullenor/eslint-config-partner/issues"
   },
   "license": "MIT",
   "peerDependencies": {

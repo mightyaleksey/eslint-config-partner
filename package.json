@@ -1,7 +1,7 @@
 {
   "name": "@sullenor/eslint-config-partner",
-  "version": "1.0.14",
-  "description": "",
+  "version": "1.0.15",
+  "description": "Eslint config for PI developers",
   "main": "index.js",
   "scripts": {
     "test": "sh test/test.sh"

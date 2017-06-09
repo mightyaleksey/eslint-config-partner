@@ -35,8 +35,8 @@ Create file `.eslintrc.json` in your project directory with the following conten
 
 ### Possible environments
 
-- `react` — use for react, flowtype and jest.
-- `server` — the default one.
+- `react` — designed for react, flowtype and jest.
+- `server` — designed for nodejs environment.
 - `static` — designed for es5 mostly.
 
 Example:

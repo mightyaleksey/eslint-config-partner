@@ -1,5 +1,6 @@
 'use strict';
 
+/* eslint quote-props: ["error", "consistent"] */
 module.exports = {
   env: {
     browser: true,
@@ -9,6 +10,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:flowtype/recommended',
+    'plugin:react/recommende',
     './rules/best-practices.js',
     './rules/commonjs.js',
     './rules/es6.js',
@@ -25,5 +28,11 @@ module.exports = {
     },
     ecmaVersion: 6,
     sourceType: 'script',
+  },
+  rules: {
+    'react/jsx-uses-react': 2,
+    'react/jsx-uses-vars': 2,
+    'react/prop-types': 0,
+    'strict': 2,
   },
 };

@@ -25,7 +25,13 @@ const rules = {
     },
   ],
   // enforce camelcase naming convention
-  // 'camelcase': 0,
+  'camelcase':
+  [
+    2,
+    {
+      properties: 'never',
+    },
+  ],
   // enforce or disallow capitalization of the first letter of a comment
   'capitalized-comments': 0,
   // require or disallow trailing commas
@@ -37,7 +43,7 @@ const rules = {
   // enforce consistent spacing before and after commas
   'comma-spacing':
   [
-    0,
+    2,
     {
       before: false,
       after: true,
@@ -56,9 +62,9 @@ const rules = {
     'never',
   ],
   // enforce consistent naming when capturing the current execution context
-  // 'consistent-this': 0,
+  'consistent-this': 2,
   // require or disallow newline at the end of files
-  // 'eol-last': 0,
+  'eol-last': 2,
   // require or disallow spacing between function identifiers and their invocations
   'func-call-spacing':
   [
@@ -68,15 +74,23 @@ const rules = {
   // require function names to match the name of the variable or property to which they are assigned
   // 'func-name-matching': 0,
   // require or disallow named function expressions
-  // 'func-names': 0,
+  'func-names':
+  [
+    2,
+    'as-needed',
+  ],
   // enforce the consistent use of either function declarations or expressions
-  // 'func-style': 0,
+  'func-style':
+  [
+    2,
+    'declaration',
+  ],
   // disallow specified identifiers
-  // 'id-blacklist': 0,
+  'id-blacklist': 2,
   // enforce minimum and maximum identifier lengths
-  // 'id-length': 0,
+  'id-length': 0,
   // require identifiers to match a specified regular expression
-  // 'id-match': 0,
+  'id-match': 2,
   // enforce consistent indentation
   'indent':
   [
@@ -128,7 +142,7 @@ const rules = {
     },
   ],
   // enforce a maximum depth that blocks can be nested
-  // 'max-depth': 0,
+  'max-depth': 2,
   // enforce a maximum line length
   'max-len':
   [
@@ -141,45 +155,41 @@ const rules = {
   // enforce a maximum number of lines per file
   // 'max-lines': 0,
   // enforce a maximum depth that callbacks can be nested
-  // 'max-nested-callbacks': 0,
+  'max-nested-callbacks': 2,
   // enforce a maximum number of parameters in function definitions
-  // 'max-params': 0,
+  'max-params': 0,
   // enforce a maximum number of statements allowed in function blocks
-  // 'max-statements': 0,
+  'max-statements': 0,
   // enforce a maximum number of statements allowed per line
-  // 'max-statements-per-line': 0,
+  'max-statements-per-line': 2,
   // enforce newlines between operands of ternary expressions
   // 'multiline-ternary': 0,
   // require constructor names to begin with a capital letter
-  // 'new-cap': 0,
+  'new-cap': 2,
   // require parentheses when invoking a constructor with no arguments
   'new-parens': 2,
   // require or disallow an empty line after variable declarations
-  'newline-after-var':
-  [
-    2,
-    'always',
-  ],
+  'newline-after-var': 0,
   // require an empty line before return statements
-  'newline-before-return': 2,
+  'newline-before-return': 0,
   // require a newline after each call in a method chain
-  // 'newline-per-chained-call': 0,
+  'newline-per-chained-call': 0,
   // disallow Array constructors
-  // 'no-array-constructor': 0,
+  'no-array-constructor': 2,
   // disallow bitwise operators
-  // 'no-bitwise': 0,
+  'no-bitwise': 2,
   // disallow continue statements
-  // 'no-continue': 0,
+  'no-continue': 2,
   // disallow inline comments after code
-  // 'no-inline-comments': 0,
+  'no-inline-comments': 0,
   // disallow if statements as the only statement in else blocks
   'no-lonely-if': 2,
   // disallow mixed binary operators
-  // 'no-mixed-operators': 0,
+  'no-mixed-operators': 0,
   // disallow mixed spaces and tabs for indentation
-  // 'no-mixed-spaces-and-tabs': 0,
+  'no-mixed-spaces-and-tabs': 2,
   // disallow use of chained assignment expressions
-  // 'no-multi-assign': 0,
+  'no-multi-assign': 2,
   // disallow multiple empty lines
   'no-multiple-empty-lines':
   [
@@ -191,23 +201,23 @@ const rules = {
     },
   ],
   // disallow negated conditions
-  // 'no-negated-condition': 0,
+  'no-negated-condition': 0,
   // disallow nested ternary expressions
-  // 'no-nested-ternary': 0,
+  'no-nested-ternary': 2,
   // disallow Object constructors
-  // 'no-new-object': 0,
+  'no-new-object': 2,
   // disallow the unary operators ++ and --
-  // 'no-plusplus': 0,
+  'no-plusplus': 0,
   // disallow specified syntax
-  // 'no-restricted-syntax': 0,
+  'no-restricted-syntax': 2,
   // disallow all tabs
-  // 'no-tabs': 0,
+  'no-tabs': 2,
   // disallow ternary operators
-  // 'no-ternary': 0,
+  'no-ternary': 0,
   // disallow trailing whitespace at the end of lines
   'no-trailing-spaces': 2,
   // disallow dangling underscores in identifiers
-  // 'no-underscore-dangle': 0,
+  'no-underscore-dangle': 0,
   // disallow ternary operators when simpler alternatives exist
   'no-unneeded-ternary': 2,
   // disallow whitespace before properties
@@ -269,7 +279,7 @@ const rules = {
     'single',
   ],
   // require JSDoc comments
-  // 'require-jsdoc': 0,
+  'require-jsdoc': 0,
   // require or disallow semicolons instead of ASI
   'semi':
   [
@@ -288,7 +298,7 @@ const rules = {
   // require object keys to be sorted
   // 'sort-keys': 0,
   // require variables within the same declaration block to be sorted
-  // 'sort-vars': 0,
+  'sort-vars': 2,
   // enforce consistent spacing before blocks
   'space-before-blocks': 2,
   // enforce consistent spacing before function definition opening parenthesis

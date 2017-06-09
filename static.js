@@ -4,6 +4,7 @@ module.exports = {
   env: {
     browser: true,
     commonjs: true,
+    jquery: true,
     mocha: true,
   },
   extends: [
@@ -17,5 +18,12 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 5,
     sourceType: 'script',
+  },
+  plugins: [
+    'flowtype',
+    'react',
+  ],
+  rules: {
+    strict: 2,
   },
 };

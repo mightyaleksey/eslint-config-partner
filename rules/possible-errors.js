@@ -59,7 +59,7 @@ const rules = {
   // disallow sparse arrays
   'no-sparse-arrays': 2,
   // disallow template literal placeholder syntax in regular strings
-  'no-template-curly-in-string': 2,
+  'no-template-curly-in-string': 0,
   // disallow confusing multiline expressions
   // 'no-unexpected-multiline': 0,
   // disallow unreachable code after return, throw, continue, and break statements

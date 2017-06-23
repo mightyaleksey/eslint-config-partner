@@ -50,7 +50,17 @@ const rules = {
   // disallow else blocks after return statements in if statements
   'no-else-return': 2,
   // disallow empty functions
-  'no-empty-function': 2,
+  'no-empty-function': [
+    2,
+    {
+      allow:
+      [
+        'arrowFunctions',
+        'functions',
+        'methods',
+      ],
+    },
+  ],
   // disallow empty destructuring patterns
   'no-empty-pattern': 2,
   // disallow null comparisons without type-checking operators
@@ -110,7 +120,7 @@ const rules = {
   // disallow certain properties on certain objects
   'no-restricted-properties': 2,
   // disallow assignment operators in return statements
-  'no-return-assign': 2,
+  'no-return-assign': 0,
   // disallow unnecessary return await
   'no-return-await': 2,
   // disallow javascript: urls

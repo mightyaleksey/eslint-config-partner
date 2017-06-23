@@ -161,11 +161,18 @@ const rules = {
   // enforce a maximum number of statements allowed in function blocks
   'max-statements': 0,
   // enforce a maximum number of statements allowed per line
-  'max-statements-per-line': 2,
+  'max-statements-per-line': 0,
   // enforce newlines between operands of ternary expressions
   // 'multiline-ternary': 0,
   // require constructor names to begin with a capital letter
-  'new-cap': 2,
+  'new-cap':
+  [
+    2,
+    {
+      capIsNew: false,
+      newIsCap: true,
+    },
+  ],
   // require parentheses when invoking a constructor with no arguments
   'new-parens': 2,
   // require or disallow an empty line after variable declarations
@@ -305,7 +312,10 @@ const rules = {
   'space-before-function-paren':
   [
     2,
-    'never',
+    {
+      anonymous: 'always',
+      named: 'never',
+    },
   ],
   // enforce consistent spacing inside parentheses
   'space-in-parens':

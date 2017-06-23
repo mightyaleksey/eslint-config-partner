@@ -29,7 +29,12 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'script',
   },
+  plugins: [
+    'flowtype',
+    'react',
+  ],
   rules: {
+    'flowtype/no-types-missing-file-annotation': 0,
     'react/jsx-indent':
     [
       2,

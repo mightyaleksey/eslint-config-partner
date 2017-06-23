@@ -4,7 +4,7 @@
 /* eslint quote-props: ["error", "consistent"] */
 const rules = {
   // require or disallow initialization in variable declarations
-  'init-declarations': 2,
+  'init-declarations': 0,
   // disallow catch clause parameters from shadowing variables in the outer scope
   // 'no-catch-shadow': 0,
   // disallow deleting variables

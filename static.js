@@ -16,7 +16,7 @@ module.exports = {
     './rules/variables.js',
   ],
   parserOptions: {
-    ecmaVersion: 5,
+    ecmaVersion: 6,
     sourceType: 'script',
   },
   plugins: [

@@ -22,6 +22,7 @@ module.exports = {
   globals: {
     process: true,
   },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,

@@ -1,10 +1,16 @@
 'use strict';
 
-const {Component, PropTypes} = require('react');
+const {Component} = require('react');
+const PropTypes = require('prop-types');
 const React = require('react');
 
 class Button extends Component {
-  _onClick = (e) => {
+  constructor(props) {
+    super(props);
+    this._onClick = this._onClick.bind(this);
+  }
+
+  _onClick(e) {
     this.props.onClick(e);
   }
   render() {

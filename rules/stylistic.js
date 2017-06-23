@@ -62,7 +62,11 @@ const rules = {
     'never',
   ],
   // enforce consistent naming when capturing the current execution context
-  'consistent-this': 2,
+  'consistent-this':
+  [
+    2,
+    '_this',
+  ],
   // require or disallow newline at the end of files
   'eol-last': 2,
   // require or disallow spacing between function identifiers and their invocations
@@ -84,6 +88,9 @@ const rules = {
   [
     2,
     'declaration',
+    {
+      allowArrowFunctions: true,
+    },
   ],
   // disallow specified identifiers
   'id-blacklist': 2,
@@ -149,7 +156,9 @@ const rules = {
     2,
     {
       code: 120,
+      ignorePattern: "'.{60,}?[^\\\\]'",
       ignoreUrls: true,
+      tabWidth: 4,
     },
   ],
   // enforce a maximum number of lines per file
@@ -196,7 +205,7 @@ const rules = {
   // disallow mixed spaces and tabs for indentation
   'no-mixed-spaces-and-tabs': 2,
   // disallow use of chained assignment expressions
-  'no-multi-assign': 2,
+  'no-multi-assign': 0,
   // disallow multiple empty lines
   'no-multiple-empty-lines':
   [

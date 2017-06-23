@@ -1,6 +1,6 @@
 {
   "name": "@sullenor/eslint-config-partner",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Eslint config for PI developers",
   "main": "index.js",
   "scripts": {

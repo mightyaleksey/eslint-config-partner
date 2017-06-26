@@ -287,6 +287,9 @@ const rules = {
   [
     2,
     'as-needed',
+    {
+      numbers: true,
+    }
   ],
   // enforce the consistent use of either backticks, double, or single quotes
   'quotes':

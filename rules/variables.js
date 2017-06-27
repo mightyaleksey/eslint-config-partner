@@ -26,7 +26,13 @@ const rules = {
   // disallow unused variables
   // 'no-unused-vars': 0,
   // disallow the use of variables before they are defined
-  'no-use-before-define': 0,
+  'no-use-before-define':
+  [
+    2,
+    {
+      functions: false,
+    },
+  ],
 };
 
 module.exports = {rules};
